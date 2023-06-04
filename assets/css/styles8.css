@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Barlow", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ======Common======== */
+.content {
+    width: 1275px;
+    margin: 0 auto;
+}
+
+
+.header .menu-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 15px;
+}
+
+.menu-inner .search-button {
+    width: 50px;
+    height: 38px;
+}
+
+.menu-inner .img-search {
+    width: 16px;
+    height: 16px;
+}
+
+.menu-inner .tool-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu-inner ul {
+    display: flex;
+}
+
+.search-wrap {
+    position: relative;
+    width: 680px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+}
+
+.search-wrap .search-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    border: 0;
+    border-radius: 999px;
+    padding-top: 5px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.search-wrap input {
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 0;
+    padding: 12px 30px 10px 50px;
+    border-radius: 999px;
+    font-size: 1.6rem;
+}
+
+.search-wrap input:focus {
+    outline: none;
+}
+
+.tool-right .account {
+    margin-right: 15px;
+}
+
+.tool-right .cart-img {
+    position: relative;
+    width: 29px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.tool-right .badge {
+    position: absolute;
+    color: red;
+    font-weight: 500;
+}
+
+.navbar {
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar .menu > li {
+    position: relative;
+}
+
+.navbar .sub-menu {
+    position: absolute;
+    top: 24px;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.navbar a {
+    padding-bottom: 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #ff0000;
+}
+
+.navbar .sub-menu a {
+    display: none;
+    padding: 8px 10px 8px 30px;
+    border: none;
+}
+
+.navbar .menu > li:hover .sub-menu a {
+    display: block;
+}
+
+.navbar .menu > li .sub-menu a:hover {
+    text-decoration: underline;
+}
+
+.block .title {
+    text-align: center;
+    color: #f15b67;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2.8rem;
+    margin: 35px 0;
+}
+
+.new-product, 
+.hot-product{
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.new-product .title-block, 
+.hot-product .title-block  {
+    position: relative;
+    margin: 35px 0;
+    font-size: 3rem;
+    color: #f15b67;
+    text-align: center;
+}
+
+.new-product .view-all, 
+.hot-product .view-all {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.8rem;
+    color: #808080;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.product-item {
+    width: 295px;
+    height: 440px;
+}
+
+.new-product img:hover, 
+.hot-product img:hover {
+    border: 1px solid red;
+}
+
+.new-product .product-price,
+.hot-product .product-price{
+    display: block;
+    margin: 25px 0 35px;
+    color: #ff0000;
+}
+
+.main-list-product{
+    width: 1160px;
+    margin: 0 auto  ;
+}
+.sale-product{
+    width: 60px; 
+    height: 21px; 
+    background-color: #f15b67; 
+    color: #fff; 
+    text-align: center;
+    font-size: 12px;
+    line-height: 21px;
+}
+/* .group-product */
+.group-product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+.product-item
+{
+    width: 260px;
+    height: 485px;
+}
+.price-product{
+    margin: 15px 0 10px;
+}
+.title-product{
+    height: 50px;
+}
+.img-product:hover
+{
+    border: 1px solid #f15b67;
+}
+
+/* ========footer============ */
+
+.footer {
+    margin-top: 110px;
+}
+
+.container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-footer{
+    height: 350px;
+    background-color: #f4f4f4;
+    line-height: 2.5;
+}
+
+.group-footer {
+    width: 295px;
+}
+
+.title-group {
+    font-weight: 600;
+}
+
+.fa-brands {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    margin: 25px 0;
+    text-align: center;
+    line-height: 1.3;
+}
